@@ -7,9 +7,8 @@
     box-sizing: border-box;
 }
 
-
 .btn {
-    background: #E02C6D;
+    background: #e02c6d;
     color: #fff;
     text-decoration: none;
     padding: 12px 25px;
@@ -18,8 +17,17 @@
     transition: all 300ms;
     margin: 15px 0;
 }
+.btn.btn-pink {
+    background: rgba(255, 255, 255, 0);
+    color: #e02c6d;
+}
 .btn:hover {
     background: #eb0c5d;
+    transform: scale(1.1);
+}
+.btn.btn-pink:hover {
+    background: rgba(255, 255, 255, 0);
+    color: #e02c6d;
     transform: scale(1.1);
 }
 
@@ -43,7 +51,6 @@ h3 {
 
 h4 {
     font-size: 30px;
-
 }
 
 p {
@@ -97,9 +104,7 @@ header {
     width: 60%;
 }
 
-
 /* header ends */
-
 
 .logo-area {
     margin-top: 50px;
@@ -111,7 +116,7 @@ header {
 }
 .logos img {
     width: 100px;
-    transition: all .3s;
+    transition: all 0.3s;
 }
 .logos img:hover {
     transform: scale(1.1);
@@ -121,8 +126,6 @@ hr {
 }
 
 /* logo area ends */
-
-
 
 .collection {
     margin: 100px 0;
@@ -141,9 +144,9 @@ hr {
     border-radius: 5px;
 }
 .rating i {
-    color: #FB8200;
+    color: #fb8200;
 }
-    
+
 .price {
     margin: 0;
     font-size: 20px;
@@ -170,6 +173,13 @@ hr {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 50px;
+}
+
+.btn-without-bg {
+    display: flex;
+    justify-content: end;
+    margin-right: 5%;
+    margin-top: 20px;
 }
 
 /* collection section ends */
