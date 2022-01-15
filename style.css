@@ -183,3 +183,20 @@ hr {
 }
 
 /* collection section ends */
+
+
+.about-content {
+
+}
+.about-me img {
+    width: 500px;
+    border-radius: 6px;
+    margin-right: 100px;
+    transition: all .3s;
+}
+
+.about-me img:hover {
+    transform: scale(1.1);
+}
+
+/* about section ends */
