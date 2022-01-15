@@ -127,6 +127,11 @@ hr {
 
 /* logo area ends */
 
+.grid-position {
+    display: flex;
+    justify-content: center;
+}
+
 .collection {
     margin: 100px 0;
 }
@@ -173,6 +178,7 @@ hr {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 50px;
+    justify-items: center;
 }
 
 .btn-without-bg {
@@ -184,13 +190,11 @@ hr {
 
 /* collection section ends */
 
-
-
 .about-me img {
     width: 500px;
     border-radius: 6px;
     margin-right: 100px;
-    transition: all .3s;
+    transition: all 0.3s;
 }
 
 .about-me img:hover {
@@ -199,9 +203,8 @@ hr {
 
 /* about section ends */
 
-
 footer {
-    background-color: #0A0826;
+    background-color: #0a0826;
     text-align: center;
     margin-top: 100px;
     padding: 50px 0;
@@ -211,11 +214,11 @@ footer h4 {
 }
 
 footer p {
-    color: #D9DBE1;
+    color: #d9dbe1;
 }
 
 .icons-color-footer {
-    color: #D9DBE1;
+    color: #d9dbe1;
     font-size: 33px;
     margin: 0 20px;
     transition: all 0.3s;
@@ -227,3 +230,163 @@ footer p {
 }
 
 /* footer ends  */
+
+
+
+
+
+/* media query starts */
+
+/* This is for tablet screen */
+@media only screen and (max-width: 992px) {
+
+    h2 {
+        font-size: 30px;
+    }
+    
+    h3 {
+        font-size: 25px;
+    }
+    
+    h4 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .container {
+        max-width: 90%;
+    }
+    header {
+        flex-direction: column;
+        padding: 50px 0;
+    }
+    .left-box {
+        width: 100%;
+        margin: 0 0 30px 0;
+        text-align: center;
+    }
+
+    header img {
+        width: 300px;
+        margin: 0 20px;
+    }
+
+    /* header responsiveness complete */
+
+    .logos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .logos img {
+        width: 100px;
+        margin: 20px;
+    }
+
+    /* logos area complete */
+
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .btn-without-bg {
+        justify-content: center;
+    }
+
+    
+
+    .about-me img {
+        width: 300px;
+        display: block;
+        margin: 0 auto;
+    }
+    .about-content {
+        margin-left: 40px;
+    }
+
+    .icons-color-footer {
+        font-size: 20px;
+    }
+
+}
+
+/* This is for mobile screen */
+@media only screen and (max-width: 768px) {
+
+    h2 {
+        font-size: 30px;
+    }
+    
+    h3 {
+        font-size: 25px;
+    }
+    
+    h4 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 90%;
+    }
+    header {
+        flex-direction: column;
+        padding: 50px 0;
+    }
+    .left-box {
+        width: 100%;
+        margin: 0 0 30px 0;
+        text-align: center;
+    }
+
+    header img {
+        width: 300px;
+        margin: 0 20px;
+    }
+
+    /* header responsiveness complete */
+
+    .logos {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .logos img {
+        width: 100px;
+        margin: 20px;
+    }
+
+    /* logos area complete */
+
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .btn-without-bg {
+        justify-content: center;
+    }
+
+    .about-me .d-flex {
+        flex-direction: column;
+    }
+
+    .about-me img {
+        width: 300px;
+        display: block;
+        margin: 0 auto;
+    }
+    .about-content {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .icons-color-footer {
+        font-size: 20px;
+    }
+
+}
+/* media query ends */
